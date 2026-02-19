@@ -1,143 +1,100 @@
-# 📊 HR Employee Attrition Prediction & Analytics Dashboard
+# 📊 HR Attrition Analytics Dashboard
 
-An end-to-end machine learning and analytics project designed to predict employee attrition and provide actionable HR insights through an interactive managerial dashboard.
+A machine learning–powered HR analytics dashboard for predicting employee attrition risk and supporting data-driven HR decision making.
 
----
-
-## 🚀 Overview
-
-Employee attrition is one of the most critical challenges in human resource management.
-This project combines **data analytics**, **machine learning**, and **interactive visualization** to:
-
-* Predict employee resignation probability
-* Identify high-risk employees
-* Estimate financial impact of turnover
-* Support data-driven HR decision making
-
-The system is implemented using **Streamlit** to provide an intuitive managerial dashboard.
+This project provides an interactive dashboard that analyzes employee data, predicts attrition probability, identifies high-risk employees, and visualizes key HR performance indicators.
 
 ---
 
-## 🎯 Project Objectives
+## 🚀 Features
 
-* Build a predictive model for employee attrition
-* Handle class imbalance using SMOTE
-* Create employee-level risk scoring
-* Design a managerial decision support dashboard
-* Translate ML results into business insights
-
----
-
-## ✨ Key Features
-
-✅ Attrition KPI monitoring
+✅ Employee attrition prediction using Machine Learning
+✅ Risk probability estimation for each employee
 ✅ High-risk employee identification
 ✅ Department-level attrition analysis
-✅ Interactive risk threshold adjustment
-✅ Feature importance visualization
-✅ Individual employee prediction module
-✅ Financial turnover risk estimation
+✅ Interactive dashboard with filtering and risk threshold control
+✅ Financial risk estimation for potential attrition
+✅ Feature importance analysis for managerial insights
+✅ Individual employee attrition prediction tool
 
 ---
 
-## 🧠 Machine Learning Pipeline
+## 🧠 Machine Learning
 
-The predictive framework includes:
+The project uses:
 
-* Data preprocessing & feature engineering
-* Standardization of numerical variables
-* One-hot encoding for categorical features
-* SMOTE oversampling for imbalance handling
-* Random Forest classification model
-* Probability-based risk scoring
-
----
-
-## 📊 Dataset
-
-This project uses the **IBM HR Analytics Employee Attrition Dataset**, which includes:
-
-* Demographic features
-* Compensation variables
-* Satisfaction metrics
-* Job-related characteristics
-* Performance indicators
-
----
-
-## 💼 Business Impact
-
-This dashboard enables organizations to:
-
-* Reduce employee turnover cost
-* Improve retention strategy
-* Detect early resignation signals
-* Identify key drivers of attrition
-* Support strategic HR planning
-
----
-
-## 🛠️ Tech Stack
-
-* Python
-* Pandas & NumPy
-* Scikit-learn
-* Imbalanced-learn
-* Matplotlib
-* Streamlit
-
----
-
-## ⚙️ Installation
-
-### 1️⃣ Clone repository
-
-```bash
-git clone https://github.com/yourusername/hr-attrition-dashboard.git
-cd hr-attrition-dashboard
-```
-
----
-
-### 2️⃣ Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-### 3️⃣ Run dashboard
-
-```bash
-streamlit run dash.py
-```
-
-The application will open automatically in your browser.
+* Random Forest Classifier
+* SMOTE for class imbalance handling
+* StandardScaler for feature scaling
+* One-hot encoding for categorical variables
 
 ---
 
 ## 📂 Project Structure
 
 ```
-📁 data
+HR-data-analysis/
+│
+├── dashboard.py
+├── HR_Attrition_Enhanced.ipynb
+├── requirements.txt
+├── README.md
+└── data/
     └── WA_Fn-UseC_-HR-Employee-Attrition.csv
-📁 dashboard
-    └── dash.py
-requirements.txt
-README.md
 ```
 
 ---
 
-## 🔮 Future Improvements
+## ⚙️ Installation
 
-* Explainable AI (SHAP / LIME)
-* Deep learning experimentation
-* Real-time HR data pipeline
-* SaaS deployment
-* Power BI integration
-* Workforce simulation modeling
+Clone repository or download ZIP:
+
+```
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Run Dashboard
+
+```
+streamlit run dashboard.py
+```
+
+Then open:
+
+```
+http://localhost:8501
+```
+
+---
+
+## 📊 Dashboard Capabilities
+
+* KPI visualization (attrition rate, high-risk employees, financial risk)
+* Attrition analysis by department
+* Risk probability distribution
+* High-risk employee table
+* Feature importance visualization
+* Individual employee attrition prediction
+
+---
+
+## 🎯 Business Value
+
+This dashboard helps organizations:
+
+* Reduce employee turnover
+* Identify retention risk early
+* Improve HR strategy
+* Support data-driven decision making
+* Estimate financial impact of attrition
+
+---
+
+## 📦 Dataset
+
+IBM HR Employee Attrition Dataset
 
 ---
 
@@ -147,6 +104,12 @@ Mohammad Hadi Farahani
 
 ---
 
-## ⭐ If you find this project useful
+## ⭐ Future Improvements
 
-Consider giving it a star ⭐
+* Model performance optimization
+* Explainable AI (SHAP)
+* Advanced HR segmentation
+* Cloud deployment
+* Real-time HR analytics
+
+---
